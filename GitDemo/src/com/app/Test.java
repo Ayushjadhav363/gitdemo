@@ -12,5 +12,9 @@ public class Test {
 	public void multiplication()
 	{
 	}
+	public void division()
+	{
+	
+	}
 }
 
