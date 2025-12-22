@@ -1,0 +1,39 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="
+			http://www.springframework.org/schema/beans
+			https://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/context
+			https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:component-scan base-package="com.app"/>
+
+	<bean id="col" class="com.app.model.Mycollection">
+
+    <constructor-arg index="0">
+        <list>
+            <value>java</value>
+            <value>python</value>
+        </list>
+    </constructor-arg>
+
+    <constructor-arg index="1">
+        <set>
+            <value>Spring</value>
+            <value>DRF</value>
+        </set>
+    </constructor-arg>
+
+    <constructor-arg index="2">
+        <map>
+            <entry key="1" value="ABC" />
+            <entry key="2" value="PQR" />
+            <entry key="3" value="XYZ" />
+        </map>
+    </constructor-arg>
+
+</bean>
+
+	
+</beans>
